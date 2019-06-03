@@ -40,4 +40,4 @@ const Reviews = [{
     }
 ]
 
-export default Reviews
+module.exports = Reviews
