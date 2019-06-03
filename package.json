@@ -1,0 +1,23 @@
+{
+  "name": "jsonstore",
+  "version": "1.0.0",
+  "description": "This is a api for e-commerce holds everything you need",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ianodad/JsonStore.git"
+  },
+  "keywords": [
+    "Node",
+    "api"
+  ],
+  "author": "Ianodad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ianodad/JsonStore/issues"
+  },
+  "homepage": "https://github.com/Ianodad/JsonStore#readme"
+}
