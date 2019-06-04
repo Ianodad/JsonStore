@@ -7,7 +7,7 @@ const app = express();
 const users = require('./services/Users');
 
 // handlebars
- const exhdlbrs = require('express-handlebars');
+const exhdlbrs = require('express-handlebars');
 
 
 // MIDDLEWARE    //
@@ -21,31 +21,44 @@ app.use(express.urlencoded({
     extended: false
 }));
 
+app.use(express.static('public'));
+
 // MIDDLEWARE -END ///
 
-// ROUTING TEMPLATE ////
-// Home page //
-app.get('/', (req, res)=> res.render('index', {
-    title : 'Welcome'
-} ));
 
-// Store page 
-app.get('/store', (req, res)=> res.render('store', {
-    users
+const hbs = exhdlbrs.create({
+    defaultLayout: 'main',
 
-})) 
+    // create custom helpers
+    helpers: {
+        concat: (x, y) => `${x} ${y}`
 
-//  END ROUTING ////
+    }
+});
+
 
 //  HANDLEBARS ENGINE  
 // setting template engine to handlebars
-app.engine('handlebars', exhdlbrs({
-    defaultLayout: 'main'
-}));
+app.engine('handlebars', hbs.engine);
 // setting up view engine
 app.set('view engine', 'handlebars');
 
 //  END- HANDLEBARS    //
+
+// ROUTING TEMPLATE ////
+// Home page //
+app.get('/', (req, res) => res.render('index', {
+    title: 'JsonStore Home'
+}));
+
+// Store page 
+app.get('/store', (req, res) => res.render('store', {
+    title: 'Store View',
+    users
+
+}))
+
+//  END ROUTING ////
 
 
 
