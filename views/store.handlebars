@@ -14,14 +14,22 @@
         </tr>
     </thead>
     <tbody>
-        {{#each users}}
-        <tr>
-        <th scope="row">{{this.index}}</th>
-        <tb>{{this.name.first}} {{this.name.last}}</tb>
-        <tb>{{this.username}}</tb>
-        <tb>{{this.email}}</tb>
-        <tb>{{this.phone}}</tb>
-        </tr>
+        {{#each users as | value key|}}
+            <tr>
+            <th scope="row">{{key}}</th>
+            <tb>{{this.name.first}} {{this.name.last}}</tb>
+            <tb>{{this.username}}</tb>
+            <tb>{{this.email}}</tb>
+            <tb>{{this.phone}}</tb>
+            </tr>
         {{/each}}
     </tbody>
 </table>
+
+<ul>
+    {{#each users as |value key|}}
+    <li>{{key}}</li>
+    <li>{{concat this.name.first this.name.last}}</li>
+    <li>{{value.email}}</li>
+    {{/each}}
+</ul>
