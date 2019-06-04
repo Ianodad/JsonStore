@@ -4,10 +4,8 @@ const morgan = require('morgan')
 // assign express to app
 const app = express();
 
-const users = require('./services/Users');
-
-// handlebars
-const exhdlbrs = require('express-handlebars');
+// get helper functions
+const hbs = require('./helpers')
 
 
 // MIDDLEWARE    //
@@ -26,16 +24,6 @@ app.use(express.static('public'));
 // MIDDLEWARE -END ///
 
 
-const hbs = exhdlbrs.create({
-    defaultLayout: 'main',
-
-    // create custom helpers
-    helpers: {
-        concat: (x, y) => `${x} ${y}`
-
-    }
-});
-
 
 //  HANDLEBARS ENGINE  
 // setting template engine to handlebars
@@ -45,18 +33,12 @@ app.set('view engine', 'handlebars');
 
 //  END- HANDLEBARS    //
 
-// ROUTING TEMPLATE ////
-// Home page //
-app.get('/', (req, res) => res.render('index', {
-    title: 'JsonStore Home'
-}));
+// ROUTING PAGES ///
+app.use('/', require('./routes/home'))
 
-// Store page 
-app.get('/store', (req, res) => res.render('store', {
-    title: 'Store View',
-    users
+app.use('/store', require('./routes/store'))
 
-}))
+// app.use('/about', require('./routes/about'))
 
 //  END ROUTING ////
 
