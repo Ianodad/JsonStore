@@ -1,0 +1,27 @@
+<h1>Store view for all the data in the api</h1>
+
+<h4>Users</h4>
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Names</th>
+            <th scope="col">Username</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+        <th scope="row">{{this.index}}</th>
+        <tb>{{this.name.first}} {{this.name.last}}</tb>
+        <tb>{{this.username}}</tb>
+        <tb>{{this.email}}</tb>
+        <tb>{{this.phone}}</tb>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

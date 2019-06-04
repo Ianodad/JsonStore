@@ -4,6 +4,11 @@ const morgan = require('morgan')
 // assign express to app
 const app = express();
 
+const users = require('./services/Users');
+
+// handlebars
+ const exhdlbrs = require('express-handlebars');
+
 
 // MIDDLEWARE    //
 
@@ -17,6 +22,32 @@ app.use(express.urlencoded({
 }));
 
 // MIDDLEWARE -END ///
+
+// ROUTING TEMPLATE ////
+// Home page //
+app.get('/', (req, res)=> res.render('index', {
+    title : 'Welcome'
+} ));
+
+// Store page 
+app.get('/store', (req, res)=> res.render('store', {
+    users
+
+})) 
+
+//  END ROUTING ////
+
+//  HANDLEBARS ENGINE  
+// setting template engine to handlebars
+app.engine('handlebars', exhdlbrs({
+    defaultLayout: 'main'
+}));
+// setting up view engine
+app.set('view engine', 'handlebars');
+
+//  END- HANDLEBARS    //
+
+
 
 // API ROUTING  /////
 
