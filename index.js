@@ -6,8 +6,15 @@ const app = express();
 
 
 // MIDDLEWARE    //
+
 // logs of request sent to the server
 app.use(morgan('tiny'));
+// Body Parser
+app.use(express.json());
+// handle url encoded data
+app.use(express.urlencoded({
+    extended: false
+}));
 
 // MIDDLEWARE -END ///
 

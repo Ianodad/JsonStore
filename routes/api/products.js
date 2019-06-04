@@ -3,11 +3,6 @@ const router = express.Router();
 const Products = require('../../services/Products')
 
 
-// Middleware   ///
-
-// This converts the data into json to read
-router.use(express.json());
-//    Middleware End     ///
 
 // Get all Products
 router.get('/', (req, res) => res.json(Products))

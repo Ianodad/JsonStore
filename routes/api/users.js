@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Users = require('../../services/Users')
 
-router.use(express.json());
 
 // Get all users
 router.get('/', (req, res) => res.json(Users))
