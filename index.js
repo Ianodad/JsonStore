@@ -11,7 +11,7 @@ const hbs = require('./helpers')
 // MIDDLEWARE    //
 
 // logs of request sent to the server
-app.use(morgan('tiny'));
+// app.use(morgan('tiny'));
 // Body Parser
 app.use(express.json());
 // handle url encoded data
