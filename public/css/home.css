@@ -55,11 +55,22 @@
 	height: 200px;
 	width: 200px;
 }
+
 .resource:hover {
 	background-image: url(../icon/Inresource.svg);
 }
 
+/* patials styling */
+
+#about {
+	background-color: #c5dbe72d;
+}
+
 /* Media query */
+
+footer p {
+	display: inline;
+}
 
 @media only screen and (max-width: 600px) {
 	.landing-image {

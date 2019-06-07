@@ -38,6 +38,8 @@ app.use('/', require('./routes/home'))
 
 app.use('/store', require('./routes/store'))
 
+app.use('/about', require('./routes/about'))
+
 // app.use('/about', require('./routes/about'))
 
 //  END ROUTING ////
