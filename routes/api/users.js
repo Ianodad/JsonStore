@@ -27,7 +27,6 @@ router.get('/:id/review', (req, res) => {
     const user = Users.filter((user) => user.index === parseInt(req.params.id));
     const reviews = Reviews.some((review) => user[0]._id === review.userId);
 
-    console.log(reviews)
         // checks if review is not true return 404 error else return user information
         !reviews ?
         res.status(404).send('review not found') :
