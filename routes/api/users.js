@@ -20,14 +20,14 @@ router.get('/', async (req, res) => {
 });
 
 // Get Single Member 
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
     // check is id is equal to the index number
-    const user = Users.some(user => user.index === parseInt(req.params.id));
+    const user = await User.findById(req.params.id);
 
     // checks if user is not true return 404 error else return user information  
     !user ?
         res.status(404).send('User not found') :
-        res.send(Users.filter(user => user.index === parseInt(req.params.id)))
+        res.send(user)
 
 })
 

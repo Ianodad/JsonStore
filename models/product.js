@@ -1,6 +1,9 @@
 // mongoose export
 const mongoose = require('mongoose');
-const Joi =require('joi')
+const Joi = require('joi');
+const {
+    reviewSchema
+} = require('./review')
 
 const productSchema = new mongoose.Schema({
     index: Number,
@@ -20,7 +23,8 @@ const productSchema = new mongoose.Schema({
     registered: {
         type: Date,
         default: Date.now
-    }
+    },
+    reviews: [reviewSchema]
 })
 
 const Product = mongoose.model('Product', productSchema);
