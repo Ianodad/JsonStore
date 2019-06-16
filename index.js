@@ -7,6 +7,16 @@ const app = express();
 // get helper functions
 const hbs = require('./helpers')
 
+// import mongoose
+const mongoose = require('mongoose');
+
+mongoose
+    .connect('mongodb://localhost/jsonstore', {
+        useNewUrlParser: true
+    })
+    .then(() => console.log('Connected to MongoDB....'))
+    .catch((err) => console.error('Could not connect to MongoDb...', err));
+
 
 // MIDDLEWARE    //
 
