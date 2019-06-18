@@ -32,12 +32,14 @@ router.get('/', async (req, res) => {
 })
 
 // Get Single Review
-router.get('/:id', (req, res) => {
-    // check if id is equal to the index number
-    const review = Reviews.some(review => review.index === parseInt(req.params.id));
+router.get('/:id', async (req, res) => {
 
-    // checks if user is not true return 404 error else return user information  
-    (!review) ? (res.status(404).send('Review not found')) : (res.send(Reviews.filter(review => review.index === parseInt(req.params.id))))
+    const review = await Review.findById(req.params.id)
+
+        // checks if user is not true return 404 error else return user information  
+        !review ?
+        res.status(404).send('Review not found') :
+        res.send(review);
 
 })
 
@@ -76,9 +78,15 @@ router.post('/', async (req, res) => {
     } catch (ex) {
         res.send(ex.message)
     }
+});
 
+// Delete review
+router.delete('/:id', async (req, res) => {
+    const review = await Review.findByIdAndRemove(req.params.id);
 
+    if (!review) return res.status(404).send('The review with the given ID was not found.');
 
+    res.send(review);
 });
 
 module.exports = router;
