@@ -28,10 +28,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     const product = await Product.findById(req.params.id);
     console.log(product)
-        // // check if id is equal to the index number
-        // const product = Products.some((product) => product.index === parseInt(req.params.id));
-
-        // checks if product is not true return 404 error else return user information
+   
         !product ?
         res.status(404).send('Product not found') :
         res.send(product);

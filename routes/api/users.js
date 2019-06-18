@@ -47,18 +47,21 @@ router.post('/', async (req, res) => {
         error
     } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
-
-    let user = new User({
-        picture: 'http://placehold.it/50x50',
-        pictureLG: 'http://placehold.it/500x500',
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
-        userName: req.body.userName,
-        email: req.body.email,
-        phone: req.body.phone
-    })
-    user = await user.save();
-    res.send(user)
+    try {
+        let user = new User({
+            picture: 'http://placehold.it/50x50',
+            pictureLG: 'http://placehold.it/500x500',
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            userName: req.body.userName,
+            email: req.body.email,
+            phone: req.body.phone
+        })
+        user = await user.save();
+        res.send(user)
+    } catch (ex) {
+        res.status(500).send(ex.message)
+    }
 })
 
 
