@@ -9,9 +9,19 @@ const productSchema = new mongoose.Schema({
     index: Number,
     isAvailable: Boolean,
     image: String,
-    productName: String,
-    price: Number,
-    company: String,
+    imageLg: String,
+    productName: {
+        type: String,
+        required: true,
+    },
+    price: {
+        type: Number,
+        required: true,
+    },
+    company: {
+        type: String,
+        required: true,
+    },
     category: {
         type: String,
         required: true,
@@ -34,9 +44,14 @@ const Product = mongoose.model('Product', productSchema);
 
 function validateProduct(product) {
     const schema = {
-        name: Joi.string().min(3).required(),
+        productName: Joi.string().min(3).required(),
         category: Joi.string(),
-        isAvailable: Joi.boolean()
+        isAvailable: Joi.boolean(),
+        price: Joi.number(),
+        company: Joi.string(),
+        category: Joi.string(),
+        quantity: Joi.number(),
+        description: Joi.string()
     };
 
     return Joi.validate(product, schema);

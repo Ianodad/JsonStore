@@ -49,15 +49,38 @@ router.get('/:id/review', (req, res) => {
         res.send(Reviews.filter((review) => product[0]._id === review.productId));
 });
 
-router.post('/', async (req, res)=> {
-   const {
-       error
-   } = validate(req.body);
-   if (error) return res.status(400).send(error.details[0].message);
-
-   let product = new Product({
-       
-   })
+router.post('/', async (req, res) => {
+    const {
+        error
+    } = validate(req.body);
+    if (error) return res.status(400).send(error.details[0].message);
+    // save from body
+    try {
+        let product = new Product({
+            isAvailable: true,
+            image: "http://placehold.it/250x250",
+            imageLg: "http://placehold.it/1080x1080",
+            productName: req.body.productName,
+            price: req.body.price,
+            company: req.body.company,
+            category: req.body.category,
+            quantity: req.body.quantity,
+            description: req.body.description
+        })
+        // save product
+        product = await product.save();
+        res.send(product)
+    } catch (ex) {
+        res.status(500).send(ex.message)
+    }
 })
+// delete product
+router.delete('/:id', async (req, res) => {
+    const product = await Product.findByIdAndRemove(req.params.id);
+
+    if (!product) return res.status(404).send('The product with the given ID was not found.');
+
+    res.send(product);
+});
 
 module.exports = router;
