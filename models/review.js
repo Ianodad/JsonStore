@@ -29,10 +29,15 @@ const reviewSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    user:{
+    userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref:'User'
-
+        required: true,
+        ref: 'User'
+    },
+    productId: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'Product'
     }
 });
 
@@ -41,10 +46,17 @@ const Review = mongoose.model('Review', reviewSchema)
 function validateReview(review) {
     const schema = {
         title: Joi.string().required(),
-        review: Joi.string().required()
+        review: Joi.string().required(),
+        like: Joi.number(),
+        dislike: Joi.number(),
+        userId: Joi.string().required(),
+        productId: Joi.string().required()
     };
 
-    return Joi.validate(review, schema);
+    const options = {
+        abortEarly: false
+    }
+    return Joi.validate(review, schema, options);
 }
 
 exports.reviewSchema = reviewSchema;

@@ -1,11 +1,29 @@
+// Get product models
+const {
+    Review,
+    validate
+} = require('../../models/review');
+
+// get product models
+const {
+    Product
+} = require('../../models/product')
+
+// Get user model
+const {
+    User
+} = require('../../models/user');
+
 const express = require('express');
 const router = express.Router();
 const Reviews = require('../../services/Reviews')
-const alphanumeric = require('alphanumeric-id');
-const Joi = require('joi');
+const Fawn = require('fawn');
+
 
 // Get all Reviews
-router.get('/', (req, res) => res.json(Reviews))
+router.get('/', (req, res) => {
+    res.send(Review)
+})
 
 // Get Single Review
 router.get('/:id', (req, res) => {
@@ -18,38 +36,38 @@ router.get('/:id', (req, res) => {
 })
 
 // create member
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
 
-    // Joi schema to set prerequisites  of content 
-    const schema = {
-        title: Joi.string().min(3).required(),
-        review: Joi.string().min(10).required(),
-        username: Joi.string().required()
+    const {
+        error
+    } = validate(req.body);
+    if (error) return res.status(400).send(error.details[0].message);
+
+    // Get the user id from user mongodb
+    const user = await User.findById(req.body.userId)
+    if (!user) return res.status(400).send('Invalid user.');
+
+    // Get review product from mongodb
+    const product = await Product.findById(req.body.productId);
+    if (!product) return res.status(400).send('Invalid product.');
+
+    try {
+        let review = new Review({
+            title: req.body.title,
+            review: req.body.review,
+            like: 0,
+            dislike: 0,
+            date: Date(Date.now()),
+            userId: user.id,
+            productId: product.id,
+        });
+        res.send(review)
+    } catch (ex) {
+        res.send(ex.message)
     }
 
-    const options = {
-        abortEarly: false
-    };
+    
 
-    // check validation againt  the schema
-    const result = Joi.validate(req.body, schema, options)
-
-
-    const newReview = {
-        _id: alphanumeric(15),
-        index: Reviews.length,
-        title: req.body.title,
-        review: req.body.review,
-        username: req.body.username,
-        like: 0,
-        dislike: 0,
-        date: Date(Date.now())
-    }
-
-    if (result.error)(res.status(400).send(result.error.details.map(m => m.message)))
-
-    Reviews.push(newReview)
-    res.send(Reviews)
 
 });
 
