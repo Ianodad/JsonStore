@@ -21,8 +21,14 @@ const Fawn = require('fawn');
 
 
 // Get all Reviews
-router.get('/', (req, res) => {
-    res.send(Review)
+router.get('/', async (req, res) => {
+    const review = await Review
+        .find()
+        .populate('product user', 'productName userName')
+        .sort({
+            index: 1
+        });
+    res.send(review)
 })
 
 // Get Single Review
@@ -44,11 +50,11 @@ router.post('/', async (req, res) => {
     if (error) return res.status(400).send(error.details[0].message);
 
     // Get the user id from user mongodb
-    const user = await User.findById(req.body.userId)
+    const user = await User.findById(req.body.user)
     if (!user) return res.status(400).send('Invalid user.');
 
     // Get review product from mongodb
-    const product = await Product.findById(req.body.productId);
+    const product = await Product.findById(req.body.product);
     if (!product) return res.status(400).send('Invalid product.');
 
     try {
@@ -58,15 +64,16 @@ router.post('/', async (req, res) => {
             like: 0,
             dislike: 0,
             date: Date(Date.now()),
-            userId: user.id,
-            productId: product.id,
+            user: user.id,
+            product: product.id,
         });
+
+        review = await review.save();
         res.send(review)
     } catch (ex) {
         res.send(ex.message)
     }
 
-    
 
 
 });

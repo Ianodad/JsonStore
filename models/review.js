@@ -29,12 +29,12 @@ const reviewSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    userId: {
+    user: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'User'
     },
-    productId: {
+    product: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'Product'
@@ -49,8 +49,8 @@ function validateReview(review) {
         review: Joi.string().required(),
         like: Joi.number(),
         dislike: Joi.number(),
-        userId: Joi.string().required(),
-        productId: Joi.string().required()
+        user: Joi.string().required(),
+        product: Joi.string().required()
     };
 
     const options = {
