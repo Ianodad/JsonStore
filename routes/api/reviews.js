@@ -69,6 +69,9 @@ router.post('/', async (req, res) => {
         });
 
         review = await review.save();
+        product.reviews.push(review)
+        product.save();
+
         res.send(review)
     } catch (ex) {
         res.send(ex.message)

@@ -28,7 +28,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     const product = await Product.findById(req.params.id);
     console.log(product)
-   
+
         !product ?
         res.status(404).send('Product not found') :
         res.send(product);
@@ -62,7 +62,8 @@ router.post('/', async (req, res) => {
             company: req.body.company,
             category: req.body.category,
             quantity: req.body.quantity,
-            description: req.body.description
+            description: req.body.description,
+            reviews: []
         })
         // save product
         product = await product.save();
