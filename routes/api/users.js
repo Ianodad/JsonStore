@@ -4,6 +4,7 @@ const {
     validate
 } = require('../../models/user')
 
+const _ = require('lodash');
 const express = require('express');
 const router = express.Router();
 
@@ -27,7 +28,8 @@ router.get('/:id', async (req, res) => {
     // checks if user is not true return 404 error else return user information  
     !user ?
         res.status(404).send('User not found') :
-        res.send(user)
+        res.send(_.pick(user, ['_id', 'picture', 'pictureLG', 'firstName', 'lastName', 'userName', 'phone', 'email']))
+
 
 })
 
@@ -47,6 +49,12 @@ router.post('/', async (req, res) => {
         error
     } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
+
+    let user = await User.findOne({
+        email: req.body.email
+    })
+    if (user) return res.status(400).send('User already exists.')
+
     try {
         let user = new User({
             picture: 'http://placehold.it/50x50',
@@ -54,11 +62,12 @@ router.post('/', async (req, res) => {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             userName: req.body.userName,
+            phone: req.body.phone,
             email: req.body.email,
-            phone: req.body.phone
-        })
-        user = await user.save();
-        res.send(user)
+            password: req.body.password
+        });
+        await user.save();
+        res.send(_.pick(user, ['_id', 'picture', 'pictureLG', 'firstName', 'lastName', 'userName', 'phone', 'email', ]))
     } catch (ex) {
         res.status(500).send(ex.message)
     }

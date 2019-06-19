@@ -24,11 +24,24 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true,
         minlength: 2,
-        maxlength: 255
+        maxlength: 255,
+        unique: true
     },
     phone: Number,
-    password: String,
-    email: String,
+    password: {
+        type: String,
+        required: true,
+        minlength: 8,
+        maxlength: 1024,
+        unique: true
+    },
+    email: {
+        type: String,
+        required: true,
+        minlength: 8,
+        maxlength: 255,
+        unique: true
+    }
 });
 
 const User = mongoose.model('User', userSchema);
@@ -38,8 +51,9 @@ function validateUser(user) {
         firstName: Joi.string().required(),
         lastName: Joi.string().required(),
         userName: Joi.string().required(),
-        email: Joi.string(),
-        phone: Joi.number()
+        email: Joi.string().required().email(),
+        phone: Joi.number(),
+        password: Joi.string().min(5).max(255)
     };
     return Joi.validate(user, schema);
 }

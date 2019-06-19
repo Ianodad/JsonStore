@@ -7,6 +7,14 @@ const app = express();
 // get helper functions
 const hbs = require('./helpers')
 
+//  HANDLEBARS ENGINE  
+// setting template engine to handlebars
+app.engine('handlebars', hbs.engine);
+// setting up view engine
+app.set('view engine', 'handlebars');
+
+//  END- HANDLEBARS    //
+
 // import mongoose
 const mongoose = require('mongoose');
 
@@ -30,30 +38,7 @@ app.use(express.urlencoded({
 }));
 
 app.use(express.static('public'));
-
 // MIDDLEWARE -END ///
-
-
-
-//  HANDLEBARS ENGINE  
-// setting template engine to handlebars
-app.engine('handlebars', hbs.engine);
-// setting up view engine
-app.set('view engine', 'handlebars');
-
-//  END- HANDLEBARS    //
-
-// ROUTING PAGES ///
-app.use('/', require('./routes/home'))
-
-app.use('/store', require('./routes/store'))
-
-app.use('/about', require('./routes/about'))
-
-// app.use('/about', require('./routes/about'))
-
-//  END ROUTING ////
-
 
 
 // API ROUTING  /////
@@ -66,8 +51,18 @@ app.use('/api/reviews', require('./routes/api/reviews'));
 
 // route for the products
 app.use('/api/products', require('./routes/api/products'));
-
 /////    API ROUTING -END   /////
+
+// ROUTING PAGES ///
+
+app.use('/', require('./routes/home'))
+
+app.use('/store', require('./routes/store'))
+
+app.use('/about', require('./routes/about'))
+//  END ROUTING ////
+
+
 
 // creating a port
 const PORT = process.env.PORT || 5000;
