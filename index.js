@@ -1,3 +1,4 @@
+const config = require('config');
 const express = require('express')
 // middleware that logs request
 const morgan = require('morgan')
@@ -7,6 +8,11 @@ const app = express();
 // get helper functions
 const hbs = require('./helpers')
 
+
+if (!config.get('jwtPrivateKey')) {
+    console.error('FATAL ERROR: jwtPrivate is not defined.');
+    process.exit(1);
+}
 //  HANDLEBARS ENGINE  
 // setting template engine to handlebars
 app.engine('handlebars', hbs.engine);
