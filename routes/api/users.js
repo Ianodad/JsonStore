@@ -5,6 +5,8 @@ const {
 } = require('../../models/user')
 
 const _ = require('lodash');
+const bcrypt = require('bcrypt');
+
 const express = require('express');
 const router = express.Router();
 
@@ -55,6 +57,7 @@ router.post('/', async (req, res) => {
     })
     if (user) return res.status(400).send('User already exists.')
 
+    const salt = await bcrypt.genSalt(10)
     try {
         let user = new User({
             picture: 'http://placehold.it/50x50',
@@ -64,7 +67,7 @@ router.post('/', async (req, res) => {
             userName: req.body.userName,
             phone: req.body.phone,
             email: req.body.email,
-            password: req.body.password
+            password: await bcrypt.hash(req.body.password, salt)
         });
         await user.save();
         res.send(_.pick(user, ['_id', 'picture', 'pictureLG', 'firstName', 'lastName', 'userName', 'phone', 'email', ]))

@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Ianodad/JsonStore#readme",
   "dependencies": {
     "alphanumeric-id": "^1.0.1",
+    "bcrypt": "^3.0.6",
     "express": "^4.17.1",
     "fawn": "^2.1.5",
     "joi": "^14.3.1",

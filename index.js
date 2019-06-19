@@ -43,6 +43,9 @@ app.use(express.static('public'));
 
 // API ROUTING  /////
 
+// Auth //
+app.use('/api/auth', require('./routes/api/auth'));
+
 // route for the users
 app.use('/api/users', require('./routes/api/users'));
 
