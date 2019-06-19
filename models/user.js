@@ -26,8 +26,9 @@ const userSchema = new mongoose.Schema({
         minlength: 2,
         maxlength: 255
     },
-    email: String,
     phone: Number,
+    password: String,
+    email: String,
 });
 
 const User = mongoose.model('User', userSchema);
