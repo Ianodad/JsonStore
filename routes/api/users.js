@@ -4,6 +4,8 @@ const {
     validate
 } = require('../../models/user')
 
+const jwt = require('jsonwebtoken');
+const config = require('config')
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
 
@@ -58,6 +60,7 @@ router.post('/', async (req, res) => {
     if (user) return res.status(400).send('User already exists.')
 
     const salt = await bcrypt.genSalt(10)
+
     try {
         let user = new User({
             picture: 'http://placehold.it/50x50',
@@ -70,7 +73,10 @@ router.post('/', async (req, res) => {
             password: await bcrypt.hash(req.body.password, salt)
         });
         await user.save();
-        res.send(_.pick(user, ['_id', 'picture', 'pictureLG', 'firstName', 'lastName', 'userName', 'phone', 'email', ]))
+
+        const token = user.generateAuthToken();
+
+        res.header('x-auth-token', token).send(_.pick(user, ['_id', 'picture', 'pictureLG', 'firstName', 'lastName', 'userName', 'phone', 'email', ]))
     } catch (ex) {
         res.status(500).send(ex.message)
     }

@@ -3,6 +3,7 @@ const {
     Product,
     validate
 } = require('../../models/product');
+const auth = require('../../middleware/auth')
 // mongoose export
 const mongoose = require('mongoose');
 // express export
@@ -46,7 +47,10 @@ router.get('/:id/review', (req, res) => {
         res.send(Reviews.filter((review) => product[0]._id === review.productId));
 });
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
+
+
+
     const {
         error
     } = validate(req.body);
