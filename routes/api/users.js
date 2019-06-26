@@ -4,6 +4,9 @@ const {
     validate
 } = require('../../models/user')
 
+const auth = require('../../middleware/auth')
+const admin = require('../../middleware/admin')
+
 const jwt = require('jsonwebtoken');
 const config = require('config')
 const _ = require('lodash');

@@ -14,6 +14,9 @@ const {
     User
 } = require('../../models/user');
 
+const auth = require('../../middleware/auth')
+const admin = require('../../middleware/admin')
+
 const express = require('express');
 const router = express.Router();
 const Reviews = require('../../services/Reviews')
@@ -44,7 +47,7 @@ router.get('/:id', async (req, res) => {
 })
 
 // create member
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
 
     const {
         error
@@ -81,7 +84,7 @@ router.post('/', async (req, res) => {
 });
 
 // Delete review
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', admin, async (req, res) => {
     const review = await Review.findByIdAndRemove(req.params.id);
 
     if (!review) return res.status(404).send('The review with the given ID was not found.');

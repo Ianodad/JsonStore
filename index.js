@@ -1,4 +1,5 @@
 const config = require('config');
+const error = require('./middleware/error')
 const express = require('express')
 // middleware that logs request
 const morgan = require('morgan')
@@ -71,7 +72,7 @@ app.use('/store', require('./routes/store'))
 app.use('/about', require('./routes/about'))
 //  END ROUTING ////
 
-
+app.use(error);
 
 // creating a port
 const PORT = process.env.PORT || 5000;
