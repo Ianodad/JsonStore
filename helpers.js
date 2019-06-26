@@ -2,8 +2,6 @@
 const exhdlbrs = require('express-handlebars');
 
 
-
-
 module.exports = exhdlbrs.create({
     defaultLayout: 'main',
 

@@ -1,7 +1,22 @@
 const error = require('../middleware/error')
-const express = require('express')
+const express = require('express');
+// get helper functions
+const hbs = require('../helpers')
 
 module.exports = function (app) {
+    // app.use(morgan('tiny'));
+
+    app.use(express.urlencoded({
+        extended: false
+    }));
+
+    app.use(express.static('public'));
+    //  HANDLEBARS ENGINE  
+    // setting template engine to handlebars
+    app.engine('handlebars', hbs.engine);
+    // setting up view engine
+    app.set('view engine', 'handlebars');
+    //  END- HANDLEBARS    //
 
     // Body Parser
     app.use(express.json());
@@ -10,6 +25,8 @@ module.exports = function (app) {
     app.use('/api/auth', require('../routes/api/auth'));
     app.use('/api/users', require('../routes/api/users'));
     app.use('/api/reviews', require('../routes/api/reviews'));
+    app.use('/api/products', require('../routes/api/products'));
+
     /////    API ROUTING -END   /////
 
     // ROUTING PAGES ///
