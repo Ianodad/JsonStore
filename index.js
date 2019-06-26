@@ -9,6 +9,8 @@ const morgan = require('morgan')
 // assign express to app
 const app = express();
 
+require('./startup/routes')(app)
+
 // get helper functions
 const hbs = require('./helpers')
 
