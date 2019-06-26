@@ -9,15 +9,15 @@ const morgan = require('morgan')
 // assign express to app
 const app = express();
 
-require('./startup/routes')(app)
-
+require('./startup/routes')(app);
+require('./startup/db')()
 // get helper functions
 const hbs = require('./helpers')
 
-process.on('uncaughtException', ex => {
-    winston.error(ex.message, ex);
-    process.exit(1);
-});
+// process.on('uncaughtException', ex => {
+//     winston.error(ex.message, ex);
+//     process.exit(1);
+// });
 
 winston.handleExceptions(
     new winston.transports.File({
@@ -26,7 +26,6 @@ winston.handleExceptions(
 )
 process.on('unhandledRejection', ex => {
     throw ex
-
 });
 
 
