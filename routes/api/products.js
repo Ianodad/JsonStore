@@ -14,27 +14,26 @@ const router = express.Router();
 const Products = require('../../services/Products');
 const Users = require('../../services/Users');
 const Reviews = require('../../services/Reviews');
-const asyncMiddleware = require('../../middleware/async')
 
 
 // Get all Products
-router.get('/', asyncMiddleware(async (req, res) => {
+router.get('/', async (req, res) => {
     const products = await Product.find().sort({
         index: 1
     });
 
     res.send(products)
-}));
+});
 
 // Get product
-router.get('/:id', asyncMiddleware(async (req, res) => {
+router.get('/:id', async (req, res) => {
     const product = await Product.findById(req.params.id);
     console.log(product)
 
         !product ?
         res.status(404).send('Product not found') :
         res.send(product);
-}));
+});
 
 router.get('/:id/review', (req, res) => {
     // check if id is equal to the index number
@@ -48,7 +47,7 @@ router.get('/:id/review', (req, res) => {
         res.send(Reviews.filter((review) => product[0]._id === review.productId));
 });
 
-router.post('/', [auth, admin], asyncMiddleware(async (req, res) => {
+router.post('/', [auth, admin], async (req, res) => {
     const {
         error
     } = validate(req.body);
@@ -71,7 +70,7 @@ router.post('/', [auth, admin], asyncMiddleware(async (req, res) => {
     res.send(product)
     res.status(500).send(ex.message)
 
-}))
+})
 // delete product
 router.delete('/:id', admin, async (req, res) => {
     const product = await Product.findByIdAndRemove(req.params.id);
