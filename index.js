@@ -1,3 +1,4 @@
+const winston = require('winston');
 const error = require('./middleware/error')
 const express = require('express')
 // middleware that logs request
@@ -15,4 +16,4 @@ require('./startup/config')();
 const PORT = process.env.PORT || 5000;
 
 console.log(`Application environment: ${app.get('env')}`);
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => winston.info(`Server started on port ${PORT}`));
