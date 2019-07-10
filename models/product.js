@@ -19,14 +19,17 @@ const productSchema = new mongoose.Schema({
         required: true,
     },
     company: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
+        ref: 'Company'
     },
+
     category: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
         required: true,
-        enum: ['Phone', 'Television', 'Laptop', 'VGA']
+        ref: 'Category'
     },
+
     quantity: Number,
     ratings: Number,
     description: String,
@@ -48,8 +51,8 @@ function validateProduct(product) {
         category: Joi.string(),
         isAvailable: Joi.boolean(),
         price: Joi.number(),
-        company: Joi.string(),
-        category: Joi.string(),
+        company: Joi.string().required(),
+        category: Joi.string().required(),
         quantity: Joi.number(),
         description: Joi.string()
     };
