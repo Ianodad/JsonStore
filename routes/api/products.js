@@ -11,13 +11,13 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 // Get user service
-const Products = require('../../services/Products');
-const Users = require('../../services/Users');
-const Reviews = require('../../services/Reviews');
+// const Products = require('../../services/Products');
+// const Users = require('../../services/Users');
+// const Reviews = require('../../services/Reviews');
 
 
 // Get all Products
-router.get('/', async (req, res) => {
+router.get('/',  async (req, res) => {
     const products = await Product.find().sort({
         index: 1
     });
@@ -28,26 +28,25 @@ router.get('/', async (req, res) => {
 // Get product
 router.get('/:id', async (req, res) => {
     const product = await Product.findById(req.params.id);
-    console.log(product)
+    // console.log(product)
 
         !product ?
         res.status(404).send('Product not found') :
         res.send(product);
 });
 
-router.get('/:id/review', (req, res) => {
-    // check if id is equal to the index number
-    const product = Products.filter((product) => product.index === parseInt(req.params.id));
-    const reviews = Reviews.some((review) => product[0]._id === review.productId);
+router.get('/:id/review', async (req, res) => {
+   
+    const product = await Product.findById(req.params.id);
 
-    console.log(reviews)
-        // checks if review is not true return 404 error else return user information
-        !reviews ?
-        res.status(404).send('review not found') :
-        res.send(Reviews.filter((review) => product[0]._id === review.productId));
+    // console.log(product.reviews)
+
+        !product.reviews ?
+        res.status(404).send('Product not found') :
+        res.send(product.reviews);
 });
 
-router.post('/', [auth, admin], async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const {
         error
     } = validate(req.body);

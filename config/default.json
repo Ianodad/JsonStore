@@ -1,3 +1,5 @@
 {
-    "jwtPrivateKey":""
+    "jwtPrivateKey": "unsecureKey",
+    "requiresAuthAdmin": true,
+    "requiresAuth": false
 }

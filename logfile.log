@@ -1,34 +1,318 @@
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:33:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:33:55.120Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:37:45.253Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:31:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:37:47.923Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:31:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:11.114Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:19.258Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:22.411Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:24.519Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:26.444Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:27.919Z"}
-{"message":"Something failed badly","stack":"Error: Something failed badly\n    at Object.<anonymous> (/home/renegade/Documents/My Projects/Node/Jsonstore/index.js:32:26)\n    at Module._compile (internal/modules/cjs/loader.js:702:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:713:10)\n    at Module.load (internal/modules/cjs/loader.js:612:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:551:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:543:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:744:10)\n    at startup (internal/bootstrap/node.js:238:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:572:3)","level":"error","timestamp":"2019-06-26T13:38:31.011Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:54:10.990Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:03.930Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:05.253Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:09.705Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:10.942Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:19.279Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:22.763Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:24.395Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:40.369Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:55:40.931Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:56:02.350Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:56:04.222Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:58:56.914Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:58:59.565Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T15:59:01.178Z"}
-{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-26T15:59:01.211Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T16:01:57.272Z"}
-{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-26T16:01:57.302Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T16:01:58.315Z"}
-{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-26T16:01:58.338Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-26T16:02:23.810Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T06:24:10.433Z"}
-{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T06:24:37.543Z"}
-{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T06:24:37.589Z"}
+
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T06:52:32.120Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T06:52:32.149Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:06:05.671Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:06:05.703Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:06:48.859Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:06:48.888Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:07:45.099Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:07:45.129Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:07:46.928Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:07:46.954Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:08:12.531Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:08:12.558Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:08:16.550Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:08:16.575Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:08:22.391Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:08:22.424Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:08:51.943Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:08:51.973Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:14:17.445Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:14:17.472Z"}
+{"message":"Cannot read property 'isAdmin' of undefined","stack":"TypeError: Cannot read property 'isAdmin' of undefined\n    at module.exports (/home/renegade/Documents/My Projects/Node/Jsonstore/middleware/admin.js:7:19)\n    at Layer.handle [as handle_request] (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/route.js:137:13)\n    at auth (/home/renegade/Documents/My Projects/Node/Jsonstore/middleware/auth.js:6:45)\n    at Layer.handle [as handle_request] (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/layer.js:95:5)\n    at /home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:174:3)\n    at router (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:47:12)\n    at Layer.handle [as handle_request] (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/layer.js:95:5)\n    at trim_prefix (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:317:13)\n    at /home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:284:7\n    at Function.process_params (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/express/lib/router/index.js:275:10)\n    at /home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/body-parser/lib/read.js:130:5\n    at invokeCallback (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/raw-body/index.js:224:16)\n    at done (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/home/renegade/Documents/My Projects/Node/Jsonstore/node_modules/raw-body/index.js:273:7)","level":"error","timestamp":"2019-06-27T07:14:20.204Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:15:42.991Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:15:43.023Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:15:44.930Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:15:44.961Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T07:16:25.660Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T07:16:25.693Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T08:45:10.023Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T08:45:10.049Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-06-27T08:45:26.284Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-06-27T08:45:26.313Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-04T12:10:49.474Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-04T12:11:06.115Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-04T12:11:06.144Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-04T12:14:58.315Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-04T12:14:58.343Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-04T12:26:57.841Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-04T12:26:57.863Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T13:54:15.222Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T13:54:15.254Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:07:23.375Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:07:23.401Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:32:54.007Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:32:54.036Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:37:15.554Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:37:15.585Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:46:16.287Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:46:16.314Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:46:31.156Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:46:31.185Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:47:48.619Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:47:48.648Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:51:51.020Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:51:51.061Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:52:55.323Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:52:55.354Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:53:05.307Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:53:05.339Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-09T14:53:09.347Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-09T14:53:09.376Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T06:36:03.795Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T06:36:23.685Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T06:36:23.712Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:01:31.018Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:01:31.050Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:03:13.225Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:03:13.262Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:03:15.052Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:03:15.085Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:03:50.899Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:03:50.927Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:03:54.215Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:03:54.241Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:04:10.652Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:04:10.682Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:04:21.390Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:04:21.422Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:04:44.044Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:04:44.073Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:04:50.713Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:04:50.748Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:19.246Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:19.275Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:23.083Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:23.111Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:24.950Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:24.976Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:26.914Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:26.938Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:38.082Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:38.118Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:48.033Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:48.064Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:54.376Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:54.406Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:05:56.205Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:05:56.240Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T10:06:28.577Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T10:06:28.602Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:05:22.317Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:05:22.347Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:08:41.716Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:08:41.747Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:08:43.507Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:08:43.534Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:11:30.009Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:11:30.031Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:11:33.190Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:11:33.225Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:15:25.681Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:15:25.711Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:23:49.286Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:23:49.314Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:06.556Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:06.587Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:13.760Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:13.790Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:18.035Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:18.065Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:24.685Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:24.713Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:26.739Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:26.770Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:31.672Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:31.706Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:35.104Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:35.141Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:36.561Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:36.591Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:38.396Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:38.423Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:41.592Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:41.623Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:45.263Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:45.295Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:24:48.511Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:24:48.539Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:00.888Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:00.916Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:07.131Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:07.158Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:17.556Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:17.585Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:19.367Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:19.396Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:20.481Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:20.513Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:24.122Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:24.151Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:25:31.133Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:25:31.162Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:29:36.563Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:29:36.592Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:32:19.492Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:32:19.521Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:33:32.999Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:33:33.031Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:35:03.955Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:35:03.988Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:35:06.949Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:35:06.982Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:35:45.789Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:35:45.818Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:35:47.075Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:35:47.103Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:35:50.622Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:35:50.651Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:36:00.371Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:36:00.401Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:36:03.728Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:36:03.756Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:36:07.607Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:36:07.639Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:36:28.195Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:36:28.220Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:36:48.361Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:36:48.390Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:45:24.996Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:45:25.027Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:48:51.339Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:48:51.372Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:50:38.250Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:50:38.277Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:51:34.676Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:51:34.705Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:51:57.764Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:51:57.788Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:51:59.626Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:51:59.648Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:52:00.323Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:52:00.351Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:53:32.564Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:53:32.590Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T12:55:32.477Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T12:55:32.505Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:32.331Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:32.361Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:35.315Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:35.337Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:46.796Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:46.825Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:48.104Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:48.131Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:49.667Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:49.696Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:15:57.247Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:15:57.276Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:00.686Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:00.714Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:03.656Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:03.678Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:07.446Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:07.476Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:26.153Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:26.177Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:30.233Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:30.262Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:35.139Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:35.168Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:37.358Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:37.389Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:44.192Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:44.222Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:47.596Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:47.619Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:49.365Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:49.388Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:16:54.104Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:16:54.130Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:03.098Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:03.127Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:06.410Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:06.439Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:12.480Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:12.510Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:17.507Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:17.534Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:18.756Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:18.780Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:23.682Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:23.716Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:44.559Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:44.587Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:46.984Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:47.016Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:17:57.054Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:17:57.079Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:18:35.307Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:18:35.334Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:18:41.523Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:18:41.557Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:18:53.802Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:18:53.831Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:04.583Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:04.608Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:07.043Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:07.076Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:08.884Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:08.909Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:10.898Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:10.928Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:13.986Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:14.015Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:19.615Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:19.642Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:32.411Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:32.440Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:36.377Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:36.406Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:44.249Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:44.275Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:48.192Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:48.224Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:57.236Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:57.264Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:19:59.432Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:19:59.461Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:02.413Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:02.440Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:08.251Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:08.278Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:09.562Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:09.592Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:17.868Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:17.896Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:24.507Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:24.530Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:34.321Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:34.350Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:44.050Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:44.083Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:45.595Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:45.623Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:55.683Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:55.712Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:20:57.298Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:20:57.328Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:21:00.167Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:21:00.196Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:21:05.643Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:21:05.671Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:21:20.281Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:21:20.308Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:21:22.194Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:21:22.225Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:21:24.403Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:21:24.432Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:25:38.262Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:25:38.296Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:25:55.196Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:25:55.227Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:27:38.682Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:27:38.709Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:27:47.536Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:27:47.567Z"}
+{"level":"info","message":"Server started on port 5000","timestamp":"2019-07-10T13:27:57.051Z"}
+{"level":"info","message":"Connected to MongoDB....","timestamp":"2019-07-10T13:27:57.080Z"}

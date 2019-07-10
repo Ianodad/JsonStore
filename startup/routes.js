@@ -26,6 +26,9 @@ module.exports = function (app) {
     app.use('/api/users', require('../routes/api/users'));
     app.use('/api/reviews', require('../routes/api/reviews'));
     app.use('/api/products', require('../routes/api/products'));
+    app.use('/api/category', require('../routes/api/category'));
+    app.use('/api/company', require('../routes/api/company'));
+
 
     /////    API ROUTING -END   /////
 
