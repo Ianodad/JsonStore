@@ -25,6 +25,9 @@ const reviewSchema = new mongoose.Schema({
     dislike: {
         type: Number,
     },
+    rating: {
+        type: Number
+    },
     datePublished: {
         type: Date,
         default: Date.now
@@ -49,6 +52,7 @@ function validateReview(review) {
         review: Joi.string().required(),
         like: Joi.number(),
         dislike: Joi.number(),
+        rating: Joi.number(),
         user: Joi.string().required(),
         product: Joi.string().required()
     };

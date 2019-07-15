@@ -72,23 +72,23 @@ router.post('/', auth, async (req, res) => {
     // save from body
     try {
         let product = new Product({
-            isAvailable: true,
-            image: "http://placehold.it/250x250",
-            imageLg: "http://placehold.it/1080x1080",
+            isAvailable: (req.body.quantity > 0) ? true : false,
+            image: !(req.body.image) ? "http://placehold.it/250x250" : (req.body.image),
+            imageLg: !(req.body.imageLg) ? "http://placehold.it/1080x1080" : (req.body.imageLg),
             productName: req.body.productName,
             price: req.body.price,
             company: company.id,
             category: category.id,
             quantity: req.body.quantity,
+            rating: 0,
             description: req.body.description,
             reviews: []
         })
         // save product
         product = await product.save();
         res.send(product)
-        res.status(500).send(ex.message)
     } catch (ex) {
-        res.send(ex.message)
+        res.status(500).send(ex.message)
     }
 
 })

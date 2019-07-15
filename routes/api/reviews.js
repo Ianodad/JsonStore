@@ -1,11 +1,18 @@
 // Get product models
-const { Review, validate } = require('../../models/review');
+const {
+	Review,
+	validate
+} = require('../../models/review');
 
 // get product models
-const { Product } = require('../../models/product');
+const {
+	Product
+} = require('../../models/product');
 
 // Get user model
-const { User } = require('../../models/user');
+const {
+	User
+} = require('../../models/user');
 
 const auth = require('../../middleware/auth');
 const admin = require('../../middleware/admin');
@@ -35,7 +42,9 @@ router.get('/:id', async (req, res) => {
 
 // create member
 router.post('/', auth, async (req, res) => {
-	const { error } = validate(req.body);
+	const {
+		error
+	} = validate(req.body);
 	if (error) return res.status(400).send(error.details[0].message);
 
 	// Get the user id from user mongodb
@@ -52,6 +61,7 @@ router.post('/', auth, async (req, res) => {
 			review: req.body.review,
 			like: 0,
 			dislike: 0,
+			rating: req.body.rating,
 			date: Date(Date.now()),
 			user: user.id,
 			product: product.id
