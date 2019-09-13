@@ -1,0 +1,4 @@
+{
+    "jwtPrivate": "unsecureKey",
+    "db":"monodb://localhost/vidly_tests"
+}
