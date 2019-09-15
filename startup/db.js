@@ -1,12 +1,15 @@
 const winston = require('winston');
 const mongoose = require('mongoose');
+const config = require('config')
 
-const config = {
-    useNewUrlParser: true,
-    useCreateIndex: true
-}
+
+// const config = {
+//     useNewUrlParser: true,
+//     useCreateIndex: true
+// }
 module.exports = function () {
+    const db = config.get('db')
     mongoose
-        .connect('mongodb://localhost/jsonstore', config)
-        .then(() => winston.info('Connected to MongoDB....'))
+        .connect(db)
+        .then(() => winston.info(`Connected to ${db}....`))
 }

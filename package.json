@@ -4,7 +4,7 @@
   "description": "This is a api for e-commerce holds everything you need",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll -verbose",
+    "test": "jest --watchAll --verbose",
     "start": "node index",
     "dev": "nodemon index"
   },
@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "jest": "^24.9.0",
     "joi": "^14.3.1",
     "jsonwebtoken": "^8.1.1",
     "lodash": "^4.17.11",
@@ -40,6 +41,7 @@
     "winston-mongodb": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
   }
 }
