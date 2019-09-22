@@ -8,9 +8,9 @@
     "start": "node index",
     "dev": "nodemon index"
   },
-  "engines":{
-    "node":"10.3.0"
-  }
+  "engines": {
+    "node": "10.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ianodad/JsonStore.git"
