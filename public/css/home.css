@@ -9,8 +9,13 @@
 	padding: 0px;
 	margin: 0px;
 	border: 0 none;
+	width: 100%;
 	/* display: block; */
 	/* position: absolute; */
+}
+
+.caption {
+	margin-top: 20em;
 }
 
 .card-group [class*='col-1'] {
@@ -63,6 +68,10 @@
 /* patials styling */
 
 #about {
+	background-color: #c5dbe72d;
+}
+
+#route {
 	background-color: #c5dbe72d;
 }
 

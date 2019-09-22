@@ -1,10 +1,6 @@
 const request = require('supertest');
-const {
-    Category
-} = require('../../models/category');
-const {
-    User
-} = require('../../models/user')
+const {Category } = require('../../models/category');
+const {User} = require('../../models/user')
 const mongoose = require('mongoose');
 
 let server;
@@ -14,8 +10,8 @@ describe('/api/category', () => {
         server = require('../../index');
     })
     afterEach(async () => {
-        server.close();
         await Category.remove({});
+        server.close();
     });
 
     describe('GET /', () => {
