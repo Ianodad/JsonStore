@@ -1,5 +1,6 @@
 {
     "jwtPrivateKey": "unsecureKey",
+    "db": "mongodb://localhost/jsonstore",
     "requiresAuthAdmin": true,
-    "requiresAuth": false
+    "requiresAuth": true
 }

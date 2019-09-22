@@ -1,6 +1,6 @@
 const winston = require('winston');
 require('express-async-errors');
-require('winston-mongodb')
+// require('winston-mongodb')
 
 module.exports = function () {
 
@@ -22,8 +22,8 @@ module.exports = function () {
         filename: 'logfile.log'
     });
 
-    winston.add(winston.transports.MongoDB, {
-        db: 'mongodb://localhost/jsonstore',
-        level: 'info'
-    });
+    // winston.add(winston.transports.MongoDB, {
+    //     db: 'mongodb://localhost/jsonstore',
+    //     level: 'info'
+    // });
 }

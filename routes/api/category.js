@@ -1,3 +1,5 @@
+const validateObjectId = require('../../middleware/validateObjectId')
+
 const {
     Category,
     validate
@@ -19,7 +21,8 @@ router.get('/', async (req, res) => {
 });
 
 // Get category
-router.get('/:id', async (req, res) => {
+router.get('/:id', validateObjectId, async (req, res) => {
+
     const category = await Category.findById(req.params.id);
 
     !category ?
@@ -27,10 +30,8 @@ router.get('/:id', async (req, res) => {
         res.send(category);
 });
 
-router.post('/', async (req, res) => {
-    const {
-        error
-    } = validate(req.body);
+router.post('/', auth, async (req, res) => {
+    const {error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message);
     // save from body
     let category = new Category({
@@ -39,7 +40,6 @@ router.post('/', async (req, res) => {
     // save  category
     category = await category.save();
     res.send(category)
-    res.status(500).send(ex.message)
 
 })
 

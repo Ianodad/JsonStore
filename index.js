@@ -25,4 +25,6 @@ require('./startup/config')();
 const PORT = process.env.PORT || 5000;
 
 console.log(`Application environment: ${app.get('env')}`);
-app.listen(PORT, () => winston.info(`Server started on port ${PORT}`));
+const server = app.listen(PORT, () => winston.info(`Server started on port ${PORT}`));
+
+module.exports = server;
