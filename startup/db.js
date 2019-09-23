@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const config = require('config')
 
 
-// const config = {
-//     useNewUrlParser: true,
-//     useCreateIndex: true
-// }
+const config = {
+    useNewUrlParser: true,
+    useCreateIndex: true
+}
 module.exports = function () {
     const db = config.get('db')
     mongoose
