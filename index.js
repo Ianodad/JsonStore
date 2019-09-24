@@ -20,7 +20,7 @@ require('./startup/routes')(app);
 require('./startup/logging')();
 require('./startup/db')();
 require('./startup/config')();
-require('./startup/prod')(app);
+// require('./startup/prod')(app);
 
 // creating a port
 const PORT = process.env.PORT || 5000;
